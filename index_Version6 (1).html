@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SDG Explorers — SDG 6 (Clean Water): Definition · Causes · Effects · Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">🔅 SDG Explorers</div>
+    <nav class="main-nav" role="navigation" aria-label="Main">
+      <button class="tab-btn active" data-tab="home">Home</button>
+      <button class="tab-btn" data-tab="climate">Climate Action</button>
+      <button class="tab-btn" data-tab="sdg6">SDG 6 — Clean Water</button>
+      <button class="tab-btn" data-tab="consumption">Responsible Consumption</button>
+      <button class="tab-btn" data-tab="education">Quality Education</button>
+      <button class="tab-btn" data-tab="feedback">Feedback</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HOME -->
+    <section id="home" class="tab-panel active" role="region" aria-labelledby="home-title">
+      <h1 id="home-title">SDG 6 — Clean Water & Sanitation</h1>
+      <p>Explore SDG 6 through four focused subtopics: Definition, Causes, Effects, and Solutions. Click a card to jump directly to that subtopic inside the SDG 6 section.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Definition</h3>
+          <p>What SDG 6 covers and why clean water and sanitation matter globally and locally.</p>
+          <button class="goto" data-tab-target="sdg6" data-sub="definition">Open Definition</button>
+        </article>
+        <article class="card">
+          <h3>Causes</h3>
+          <p>Explore the main causes of water stress, contamination and lack of access.</p>
+          <button class="goto" data-tab-target="sdg6" data-sub="causes">Open Causes</button>
+        </article>
+        <article class="card">
+          <h3>Effects</h3>
+          <p>See how water problems affect health, food, economies and ecosystems.</p>
+          <button class="goto" data-tab-target="sdg6" data-sub="effects">Open Effects</button>
+        </article>
+        <article class="card">
+          <h3>Solutions</h3>
+          <p>Practical solutions — household, community and policy actions plus tools.</p>
+          <button class="goto" data-tab-target="sdg6" data-sub="solutions">Open Solutions</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CLIMATE ACTION -->
+    <section id="climate" class="tab-panel" role="region" aria-labelledby="climate-title">
+      <h2 id="climate-title">Climate Action — Key Ideas & Resources</h2>
+      <p>This section includes resources, a mini-quiz, and a quick action planner.</p>
+
+      <div class="interactive">
+        <div class="resource-block">
+          <h3>Resources</h3>
+          <input class="filter" data-filter-for="climate" placeholder="Filter resources..." />
+          <ul class="resource-list" data-resources-for="climate">
+            <li data-tags="energy,transport">Low-carbon transport tips — https://ec.europa.eu/clima</li>
+            <li data-tags="energy,home">Home energy saving guide — https://www.energy.gov/</li>
+            <li data-tags="policy,global">Global climate policy overview — https://unfccc.int/</li>
+            <li data-tags="trees,local">Community tree planting ideas — https://www.plant-for-the-planet.org/</li>
+          </ul>
+        </div>
+
+        <div class="quiz-block">
+          <h3>Mini-Quiz</h3>
+          <form class="quiz" data-topic="climate">
+            <p>Which action typically reduces household emissions the most?</p>
+            <label><input type="radio" name="q1" value="a" /> Turning off lights</label>
+            <label><input type="radio" name="q1" value="b" /> Switching to renewable energy</label>
+            <label><input type="radio" name="q1" value="c" /> Separating recycling</label>
+            <button type="submit">Submit Answer</button>
+            <p class="quiz-feedback" aria-live="polite"></p>
+          </form>
+
+          <div class="action-planner">
+            <h4>Quick Action Planner</h4>
+            <label>
+              My main change this week:
+              <input id="plan-climate" placeholder="e.g., cycle to school twice" />
+            </label>
+            <button id="save-plan-climate">Save Plan</button>
+            <p class="small-note" id="plan-climate-saved"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SDG 6 — CLEAN WATER with internal subtabs -->
+    <section id="sdg6" class="tab-panel" role="region" aria-labelledby="sdg6-title">
+      <h2 id="sdg6-title">SDG 6 — Clean Water & Sanitation</h2>
+      <p>Inside SDG 6 you can switch between Definition, Causes, Effects and Solutions. The design and layout are inspired by the example you provided while keeping everything focused on SDG 6.</p>
+
+      <nav class="sub-nav" aria-label="SDG6 Subtopics">
+        <button class="subtab active" data-sub="definition">Definition</button>
+        <button class="subtab" data-sub="causes">Causes</button>
+        <button class="subtab" data-sub="effects">Effects</button>
+        <button class="subtab" data-sub="solutions">Solutions</button>
+      </nav>
+
+      <div class="subpanels">
+        <article id="sub-definition" class="subpanel active">
+          <h3>Definition — What is SDG 6?</h3>
+          <p>SDG 6 aims to ensure availability and sustainable management of water and sanitation for all. It covers safe drinking water, sanitation, hygiene, water quality, water-use efficiency, integrated water resources management, and transboundary cooperation.</p>
+
+          <div class="interactive">
+            <div class="resource-block">
+              <h4>Quick facts & resources</h4>
+              <ul class="resource-list">
+                <li>About SDG 6 — https://www.un.org/sustainabledevelopment/water-and-sanitation/</li>
+                <li>WHO: water, sanitation & hygiene — https://www.who.int/health-topics/water-sanitation-and-hygiene</li>
+                <li>Why safe water matters — local community and global context.</li>
+              </ul>
+            </div>
+
+            <div class="quiz-block">
+              <h4>Check your knowledge</h4>
+              <form class="quiz" data-topic="definition">
+                <p>Which item is directly part of SDG 6?</p>
+                <label><input type="radio" name="q1" value="a" /> Affordable energy</label>
+                <label><input type="radio" name="q1" value="b" /> Safe sanitation and hygiene</label>
+                <label><input type="radio" name="q1" value="c" /> Industrial innovation</label>
+                <button type="submit">Submit Answer</button>
+                <p class="quiz-feedback" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </article>
+
+        <article id="sub-causes" class="subpanel">
+          <h3>Causes — Why do water problems happen?</h3>
+          <p>Common causes include pollution (industrial, agricultural), over-abstraction of groundwater, poor sanitation, lack of infrastructure, and climate change impacts such as droughts and floods.</p>
+
+          <div class="interactive">
+            <div class="resource-block">
+              <h4>Causes & indicators</h4>
+              <ul class="resource-list">
+                <li data-tags="pollution">Agricultural runoff (nitrates, pesticides)</li>
+                <li data-tags="infrastructure">Inadequate sanitation and sewage management</li>
+                <li data-tags="overuse">Excessive water extraction for irrigation</li>
+                <li data-tags="climate">Climate-driven extremes (droughts/floods)</li>
+              </ul>
+            </div>
+
+            <div class="quiz-block">
+              <h4>Interactive: click a cause for a short explanation</h4>
+              <div class="click-list">
+                <button class="explain" data-explain="pollution">Pollution (runoff & discharge)</button>
+                <button class="explain" data-explain="overuse">Overuse (agriculture & industry)</button>
+                <button class="explain" data-explain="sanitation">Poor sanitation</button>
+                <div id="explain-output" class="result-box" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="sub-effects" class="subpanel">
+          <h3>Effects — What happens when water systems fail?</h3>
+          <p>Effects include increased disease, food insecurity, lost livelihoods, ecosystem damage, and social conflict. Water problems disproportionately affect children, women and marginalized communities.</p>
+
+          <div class="interactive">
+            <div class="resource-block">
+              <h4>Effects snapshot</h4>
+              <ul class="resource-list">
+                <li>Health: waterborne diseases (diarrhea, cholera)</li>
+                <li>Economy: lost work days, agricultural losses</li>
+                <li>Environment: biodiversity loss and habitat degradation</li>
+              </ul>
+            </div>
+
+            <div class="quiz-block">
+              <h4>Mini-Quiz</h4>
+              <form class="quiz" data-topic="effects">
+                <p>Which is a common health effect of unsafe water?</p>
+                <label><input type="radio" name="q1" value="a" /> Improved agriculture</label>
+                <label><input type="radio" name="q1" value="b" /> Waterborne diseases</label>
+                <label><input type="radio" name="q1" value="c" /> Higher fish populations</label>
+                <button type="submit">Submit Answer</button>
+                <p class="quiz-feedback" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </article>
+
+        <article id="sub-solutions" class="subpanel">
+          <h3>Solutions — How can we fix water problems?</h3>
+          <p>Solutions span household habits, community projects, technology (filters, low-flow fixtures), nature-based solutions (wetland restoration), policy and infrastructure investment.</p>
+
+          <div class="interactive">
+            <div class="resource-block">
+              <h4>Solutions & resources</h4>
+              <ul class="resource-list">
+                <li>Water-saving tips — https://www.nrdc.org/stories/water-conservation-tips</li>
+                <li>Low-cost filtration and safe water tech — https://www.safewater.org/</li>
+                <li>Community solutions: rainwater harvesting, leak repairs, sanitation campaigns</li>
+              </ul>
+            </div>
+
+            <div class="quiz-block">
+              <h4>Tools</h4>
+              <h5>Water Quality Checker</h5>
+              <p>Quick, educational assessment (not a lab result).</p>
+              <label>pH (0-14): <input type="number" id="w-ph" step="0.1" min="0" max="14" /></label>
+              <label>Turbidity (NTU): <input type="number" id="w-turbidity" step="0.1" min="0" /></label>
+              <label>Nitrate (mg/L): <input type="number" id="w-nitrate" step="0.1" min="0" /></label>
+              <button id="check-water">Check Water</button>
+              <div id="water-check-result" class="result-box" aria-live="polite"></div>
+
+              <h5 style="margin-top:12px">Water Impact Estimator</h5>
+              <label>Shower (minutes) <input type="number" id="est-shower" min="0" value="5" /></label>
+              <label>Toilet flushes/day <input type="number" id="est-flushes" min="0" value="4" /></label>
+              <label>Dishwashing (manual) mins/day <input type="number" id="est-dishes" min="0" value="10" /></label>
+              <button id="estimate-water">Estimate</button>
+              <div id="water-estimate-result" class="result-box" aria-live="polite"></div>
+              <button id="save-water-estimate">Save Estimate</button>
+              <p class="small-note" id="water-estimate-saved"></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESPONSIBLE CONSUMPTION -->
+    <section id="consumption" class="tab-panel" role="region" aria-labelledby="consumption-title">
+      <h2 id="consumption-title">Responsible Consumption & Production</h2>
+      <p>Reduce waste, buy smarter, and learn circular ideas.</p>
+
+      <div class="interactive">
+        <div class="resource-block">
+          <h3>Resources</h3>
+          <input class="filter" data-filter-for="consumption" placeholder="Filter resources..." />
+          <ul class="resource-list" data-resources-for="consumption">
+            <li data-tags="reduce,waste">Zero-waste starter tips — https://www.zerowastehome.com/</li>
+            <li data-tags="repair,clothes">Clothing repair guides — https://fixingthings.com/</li>
+            <li data-tags="reuse,home">Creative reuse projects — https://www.instructables.com/</li>
+            <li data-tags="policy,packaging">Packaging policy ideas — https://www.wrap.org.uk/</li>
+          </ul>
+        </div>
+
+        <div class="quiz-block">
+          <h3>Mini-Quiz</h3>
+          <form class="quiz" data-topic="consumption">
+            <p>Which habit most reduces a product's environmental footprint?</p>
+            <label><input type="radio" name="q1" value="a" /> Repair and reuse</label>
+            <label><input type="radio" name="q1" value="b" /> Choose popular brands</label>
+            <label><input type="radio" name="q1" value="c" /> Buy in single-use packaging</label>
+            <button type="submit">Submit Answer</button>
+            <p class="quiz-feedback" aria-live="polite"></p>
+          </form>
+
+          <div class="eco-checklist">
+            <h4>Quick Eco Checklist</h4>
+            <label><input type="checkbox" id="check1" /> I carried a reusable bag today</label><br/>
+            <label><input type="checkbox" id="check2" /> I chose a repairable item</label><br/>
+            <label><input type="checkbox" id="check3" /> I avoided single-use plastics</label><br/>
+            <button id="save-checklist">Save Checklist</button>
+            <p class="small-note" id="checklist-saved"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY EDUCATION -->
+    <section id="education" class="tab-panel" role="region" aria-labelledby="education-title">
+      <h2 id="education-title">Quality Education — Tools & Activities</h2>
+      <p>Support inclusive and equitable education — find resources, micro-lessons, and a quick teaching activity creator.</p>
+
+      <div class="interactive">
+        <div class="resource-block">
+          <h3>Resources</h3>
+          <input class="filter" data-filter-for="education" placeholder="Filter resources..." />
+          <ul class="resource-list" data-resources-for="education">
+            <li data-tags="lesson,primary">Short lesson plans for primary — https://teachstarter.com/</li>
+            <li data-tags="teacher,methods">Inclusive teaching methods — https://unesdoc.unesco.org/</li>
+            <li data-tags="online,tools">Free online learning tools — https://www.khanacademy.org/</li>
+            <li data-tags="skills,coding">Beginner coding activities — https://code.org/</li>
+          </ul>
+        </div>
+
+        <div class="quiz-block">
+          <h3>Mini-Quiz</h3>
+          <form class="quiz" data-topic="education">
+            <p>Which approach best supports inclusive classrooms?</p>
+            <label><input type="radio" name="q1" value="a" /> Differentiated instruction</label>
+            <label><input type="radio" name="q1" value="b" /> One-size lesson for all</label>
+            <label><input type="radio" name="q1" value="c" /> Only lecture-based teaching</label>
+            <button type="submit">Submit Answer</button>
+            <p class="quiz-feedback" aria-live="polite"></p>
+          </form>
+
+          <div class="activity-creator">
+            <h4>Quick Activity Creator</h4>
+            <input id="activity-topic" placeholder="Topic (e.g., recycling)" />
+            <input id="activity-duration" placeholder="Duration (e.g., 15 min)" />
+            <button id="create-activity">Create Activity</button>
+            <div id="activity-result" class="result-box" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback" class="tab-panel" role="region" aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Feedback & Contact</h2>
+      <p>We'd love to hear from you — suggestions, errors, cool ideas, or what you learned.</p>
+
+      <!-- Feedback form: integrates Formspree and local save + CSV export -->
+      <form id="feedback-form"
+            class="feedback-form"
+            action="https://formspree.io/f/xnnlabrl"
+            method="POST"
+            data-endpoint="https://formspree.io/f/xnnlabrl"
+      >
+        <label>
+          Name
+          <input type="text" id="fb-name" name="name" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="fb-email" name="email" required placeholder="name@example.com" />
+        </label>
+        <label>
+          Which topic?
+          <select id="fb-topic" name="topic">
+            <option value="general">General</option>
+            <option value="definition">Definition</option>
+            <option value="causes">Causes</option>
+            <option value="effects">Effects</option>
+            <option value="solutions">Solutions</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea id="fb-message" name="message" required placeholder="Tell us what you think..."></textarea>
+        </label>
+        <label class="rating">
+          Rating:
+          <select id="fb-rating" name="rating">
+            <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+            <option value="4">⭐️⭐️⭐️⭐️</option>
+            <option value="3">⭐️⭐️⭐️</option>
+            <option value="2">⭐️⭐️</option>
+            <option value="1">⭐️</option>
+          </select>
+        </label>
+
+        <label style="font-size:0.9rem;color:var(--muted);">
+          <input type="checkbox" id="fb-save-local" checked /> Save a copy locally on this device
+        </label>
+
+        <div style="display:flex;gap:8px;align-items:center;">
+          <button type="submit">Send Feedback</button>
+          <button type="button" id="export-feedback">Export feedback (CSV)</button>
+        </div>
+
+        <p id="fb-status" class="small-note" aria-live="polite"></p>
+
+        <noscript>
+          <div style="margin-top:10px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);">
+            <p style="margin:0 0 8px 0;">If you cannot use the interactive form, use this simple fallback:</p>
+            <form action="https://formspree.io/f/xnnlabrl" method="POST">
+              <label style="display:block;margin-bottom:6px;">
+                Your email:
+                <input type="email" name="email" required style="width:100%;padding:6px;border-radius:6px;" />
+              </label>
+              <label style="display:block;margin-bottom:6px;">
+                Your message:
+                <textarea name="message" required style="width:100%;padding:6px;border-radius:6px;"></textarea>
+              </label>
+              <button type="submit" style="background:var(--accent);border:none;padding:8px;border-radius:6px;color:#042;cursor:pointer;">Send</button>
+            </form>
+          </div>
+        </noscript>
+      </form>
+
+      <div class="feedback-list">
+        <h3>Recent feedback (saved locally)</h3>
+        <ul id="feedback-items"></ul>
+        <button id="clear-feedback">Clear Saved Feedback</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Created by student — interactive SDG 6 learning. Inspired by: https://yigame.github.io/Greenhouse-Gas/</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
